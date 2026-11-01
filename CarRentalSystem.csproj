@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" Condition="false" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9C8E43A1-47D5-4B7B-91A6-CC3E2F5B18D1}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CarRentalSystem</RootNamespace>
+    <AssemblyName>CarRentalSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Admin\Model\Admin.cs" />
+    <Compile Include="Admin\Repository\AdminRepository.cs" />
+    <Compile Include="Admin\Service\AdminService.cs" />
+    <Compile Include="Admin\UI\AdminUI.cs" />
+    <Compile Include="Car\Model\Car.cs" />
+    <Compile Include="Car\Repository\CarRepository.cs" />
+    <Compile Include="Car\Service\CarService.cs" />
+    <Compile Include="Car\UI\CarUI.cs" />
+    <Compile Include="Common\ConsoleInput.cs" />
+    <Compile Include="RentalHistory\Model\RentalHistory.cs" />
+    <Compile Include="RentalHistory\Repository\RentalHistoryRepository.cs" />
+    <Compile Include="RentalHistory\Service\RentalHistoryService.cs" />
+    <Compile Include="RentalHistory\UI\RentalHistoryUI.cs" />
+    <Compile Include="User\Model\User.cs" />
+    <Compile Include="User\Repository\UserRepository.cs" />
+    <Compile Include="User\Service\UserService.cs" />
+    <Compile Include="User\UI\UserUI.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

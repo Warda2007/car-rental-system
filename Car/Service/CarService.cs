@@ -92,6 +92,28 @@ namespace CarRentalSystem.Cars.Service
             cars[a] = cars[b];
             cars[b] = temp;
         }
+         //public List<int> SearchRange (int maxprice, int minprice){
+        // list<int> searchrange= newlist<int> ;
+        // for (int i=0;  i<cars.count; i++){
+        // if(car[i].price>=min && cars[i].price<=max){
+        // list<int>searchrange.add(i) ;}
+        // return searchrange;
+        // }
+        //}
+
+        // public list<string>searchbyname(string name){
+        // list<string> searchbyname=new list<string> ;
+        // for(int i=0; i<cars.count; i++){
+        // if(cars[i].name.ToLower == carname.ToLower){
+        // list<string> searchbyname.add.cars.name ;
+        //}
+        //}
+        //}
+
+
+
+        // public list<int> searchavailableity
+        // logic implementation by comparing the available cars from the list and then loading the cars available in the list
 
         public void SortByPrice()
         {

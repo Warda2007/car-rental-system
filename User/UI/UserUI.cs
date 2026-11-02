@@ -101,6 +101,17 @@ namespace CarRentalSystem.Users.UI
             Console.Write("All removed");
         }
 
+        // private void searchbyprice(int maxprice,int minprice){
+        // console.write("enter the minimum price")
+        // int minprice= ConsoleInput.ReadInt()
+        // console.write("enter the maximum price")
+        // int maxprice=ConsoleInput.ReadInt()
+        // if (minprice>maxprice){
+        // console.writeline("invalid range entered")
+        //}
+        //}
+
+
         public void UserPanel(User currentUser)
         {
             int userChoice;
@@ -119,6 +130,7 @@ namespace CarRentalSystem.Users.UI
                 Console.Write("8. Count My Cars\n");
                 Console.Write("9. Remove All Cars\n");
                 Console.Write("10. Logout\n");
+                // console.write("11. search car by name, range, or availabilty")
                 Console.Write("Enter: ");
                 userChoice = ConsoleInput.ReadInt();
 

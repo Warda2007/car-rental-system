@@ -31,7 +31,24 @@ namespace CarRentalSystem.Users.Service
             if (id == 1)
                 return user1;
             return user2;
+
         }
+
+
+
+        // public list<int> searchrange(int maxprice, int minprice){
+        // return carservive. list<int>searchrange(maxprice, minprice);
+        //}
+
+
+        // public list<string>searchbyname(string name){
+        //return car.service list<string>searchbyname;
+        //}
+
+
+
+
+
 
         // ---------- FILE HANDLING (all data) ----------
         public void LoadAllData()
